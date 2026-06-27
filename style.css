@@ -1,0 +1,842 @@
+/*==================================================
+                GLOBAL SETTINGS
+===================================================*/
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+html,
+body,
+[class*="css"] {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Hide Streamlit Branding */
+
+#MainMenu {
+  visibility: hidden;
+}
+
+footer {
+  visibility: hidden;
+}
+
+header {
+  visibility: visible;
+}
+
+/*==================================================
+                    APP
+===================================================*/
+
+.stApp {
+  background: #f4f8fc;
+}
+
+/*==================================================
+                SIDEBAR
+===================================================*/
+
+section[data-testid="stSidebar"] {
+  background: linear-gradient(180deg, #071b3a 0%, #0e2d5a 100%);
+
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+} /******** Sidebar Text ********/
+
+section[data-testid="stSidebar"] label,
+section[data-testid="stSidebar"] p,
+section[data-testid="stSidebar"] span,
+section[data-testid="stSidebar"] div,
+section[data-testid="stSidebar"] h1,
+section[data-testid="stSidebar"] h2,
+section[data-testid="stSidebar"] h3 {
+  color: white !important;
+}
+
+/* Sidebar Logo */
+
+.logo {
+  text-align: center;
+
+  padding-top: 10px;
+}
+
+.logo img {
+  width: 90px;
+}
+
+.logo h2 {
+  margin-top: 8px;
+
+  font-weight: 700;
+
+  color: white;
+}
+
+.logo p {
+  color: #9fb7da;
+
+  font-size: 13px;
+}
+
+/*==================================================
+                SIDEBAR MENU
+===================================================*/
+
+.stRadio > div {
+  gap: 12px;
+}
+
+.stRadio label {
+  border-radius: 12px;
+
+  padding: 10px 15px;
+
+  transition: 0.3s;
+}
+
+.stRadio label:hover {
+  background: #2563eb;
+}
+
+/*==================================================
+                HERO BANNER
+===================================================*/
+
+.hero {
+  background: linear-gradient(135deg, white, #eef6ff);
+
+  border-radius: 25px;
+
+  padding: 40px;
+
+  margin-bottom: 25px;
+
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.hero-title {
+  font-size: 50px;
+
+  font-weight: 700;
+
+  color: #0f172a;
+}
+
+.hero-blue {
+  color: #2563eb;
+}
+
+.hero-sub {
+  margin-top: 10px;
+
+  font-size: 20px;
+
+  color: #64748b;
+}
+
+.hero-icons {
+  margin-top: 25px;
+
+  display: flex;
+
+  gap: 30px;
+}
+
+/*==================================================
+                MAIN CARD
+===================================================*/
+
+.card {
+  background: white;
+
+  border-radius: 22px;
+
+  padding: 28px;
+
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.08);
+
+  margin-bottom: 25px;
+}
+
+/*==================================================
+                METRIC CARDS
+===================================================*/
+
+.metric-card {
+  background: white;
+
+  border-radius: 18px;
+
+  padding: 18px;
+
+  box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.08);
+
+  transition: 0.3s;
+
+  text-align: center;
+}
+
+.metric-card:hover {
+  transform: translateY(-5px);
+}
+
+.metric-title {
+  font-size: 15px;
+
+  color: #6b7280;
+}
+
+.metric-value {
+  font-size: 34px;
+
+  font-weight: 700;
+
+  margin-top: 8px;
+}
+
+/* Different Colors */
+
+.green {
+  border-left: 6px solid #22c55e;
+}
+
+.blue {
+  border-left: 6px solid #2563eb;
+}
+
+.orange {
+  border-left: 6px solid #f59e0b;
+}
+
+.purple {
+  border-left: 6px solid #8b5cf6;
+}
+
+/*==================================================
+                PREDICTION PRICE
+===================================================*/
+
+.price {
+  font-size: 58px;
+
+  font-weight: 800;
+
+  color: #16a34a;
+
+  text-align: center;
+
+  margin: 30px 0;
+}
+
+/*==================================================
+                BUTTON
+===================================================*/
+
+.stButton > button {
+  width: 100%;
+
+  background: linear-gradient(90deg, #2563eb, #1d4ed8);
+
+  color: white;
+
+  border: none;
+
+  border-radius: 12px;
+
+  padding: 15px;
+
+  font-size: 18px;
+
+  font-weight: 600;
+
+  transition: 0.3s;
+}
+
+.stButton > button:hover {
+  transform: scale(1.02);
+
+  background: #1e40af;
+}
+
+/*==================================================
+                DIVIDER
+===================================================*/
+
+hr {
+  border: none;
+
+  height: 1px;
+
+  background: #e5e7eb;
+}
+
+/*==================================================
+                INPUT FIELDS
+===================================================*/
+
+/* Number Input */
+
+.stNumberInput input {
+  border-radius: 12px !important;
+
+  border: 1px solid #d1d5db !important;
+
+  padding: 12px !important;
+
+  background: white !important;
+
+  color: #111827 !important;
+
+  font-size: 15px;
+}
+
+/* Select Box */
+
+.stSelectbox div[data-baseweb="select"] {
+  border-radius: 12px !important;
+
+  border: 1px solid #d1d5db !important;
+
+  background: white !important;
+}
+
+/* Text Input */
+
+.stTextInput input {
+  border-radius: 12px !important;
+
+  border: 1px solid #d1d5db !important;
+}
+
+/* Labels */
+.stNumberInput label,
+.stSelectbox label {
+  color: #334155 !important;
+  font-weight: 600;
+}
+
+/*==================================================
+                CONTAINERS
+===================================================*/
+
+div[data-testid="stVerticalBlock"] {
+  gap: 1rem;
+}
+
+div[data-testid="stHorizontalBlock"] {
+  gap: 1rem;
+}
+
+/*==================================================
+                METRICS
+===================================================*/
+
+div[data-testid="metric-container"] {
+  background: white;
+
+  border-radius: 16px;
+
+  padding: 18px;
+
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.08);
+
+  border: 1px solid #e5e7eb;
+}
+
+div[data-testid="metric-container"]:hover {
+  transform: translateY(-4px);
+
+  transition: 0.3s;
+}
+
+/*==================================================
+                DATAFRAME
+===================================================*/
+
+div[data-testid="stDataFrame"] {
+  border-radius: 16px;
+
+  overflow: hidden;
+
+  border: 1px solid #e5e7eb;
+}
+
+/*==================================================
+                FILE UPLOADER
+===================================================*/
+
+div[data-testid="stFileUploader"] {
+  border: 2px dashed #2563eb;
+
+  border-radius: 16px;
+
+  padding: 25px;
+
+  background: white;
+}
+
+/*==================================================
+                SUCCESS BOX
+===================================================*/
+
+div[data-testid="stAlert"] {
+  border-radius: 14px;
+}
+/*==================================================
+                SIDEBAR PROFILE CARD
+===================================================*/
+
+.profile-card {
+  background: rgba(255, 255, 255, 0.08);
+
+  border-radius: 18px;
+
+  padding: 18px;
+
+  margin-top: 35px;
+
+  text-align: center;
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.profile-img {
+  width: 90px;
+
+  height: 90px;
+
+  border-radius: 50%;
+
+  object-fit: cover;
+
+  margin-bottom: 12px;
+}
+
+.profile-name {
+  color: white;
+
+  font-size: 22px;
+
+  font-weight: 700;
+}
+
+.profile-role {
+  color: #bbd4f6;
+
+  font-size: 14px;
+
+  margin-top: 4px;
+}
+
+/*==================================================
+                SOCIAL BUTTONS
+===================================================*/
+
+.social-btn {
+  display: block;
+
+  text-decoration: none;
+
+  background: #2563eb;
+
+  color: white !important;
+
+  padding: 10px;
+
+  border-radius: 10px;
+
+  margin-top: 10px;
+
+  text-align: center;
+
+  font-weight: 600;
+
+  transition: 0.3s;
+}
+
+.social-btn:hover {
+  background: #1d4ed8;
+
+  transform: translateY(-2px);
+}
+
+/*==================================================
+                CHART CONTAINER
+===================================================*/
+
+.chart-card {
+  background: white;
+
+  border-radius: 20px;
+
+  padding: 20px;
+
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/*==================================================
+                TABLE TITLE
+===================================================*/
+
+.section-title {
+  font-size: 28px;
+
+  font-weight: 700;
+
+  color: #0f172a;
+
+  margin-bottom: 15px;
+}
+
+/*==================================================
+                FOOTER
+===================================================*/
+
+.footer {
+  margin-top: 40px;
+
+  padding: 25px;
+
+  text-align: center;
+
+  color: #64748b;
+
+  font-size: 15px;
+}
+
+.footer b {
+  color: #2563eb;
+}
+
+/*==================================================
+                BADGES
+===================================================*/
+
+.badge {
+  display: inline-block;
+
+  background: #dbeafe;
+
+  color: #1d4ed8;
+
+  padding: 8px 16px;
+
+  border-radius: 25px;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  margin: 5px;
+}
+
+.success-badge {
+  background: #dcfce7;
+
+  color: #15803d;
+}
+
+.warning-badge {
+  background: #fef3c7;
+
+  color: #b45309;
+}
+
+/*==================================================
+                EXPANDER
+===================================================*/
+
+details {
+  background: white;
+
+  border-radius: 16px;
+
+  padding: 10px;
+}
+
+/*==================================================
+                SCROLLBAR
+===================================================*/
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2563eb;
+
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1d4ed8;
+}
+
+/*==================================================
+                LINKS
+===================================================*/
+
+a {
+  color: #2563eb;
+
+  text-decoration: none;
+}
+
+a:hover {
+  color: #1d4ed8;
+}
+
+/*==================================================
+                IMAGE
+===================================================*/
+
+img {
+  border-radius: 18px;
+}
+
+/*==================================================
+                PLOT
+===================================================*/
+
+canvas {
+  border-radius: 16px;
+}
+
+/*==================================================
+                ANIMATIONS
+===================================================*/
+
+.card,
+.metric-card,
+.chart-card {
+  animation: fadeUp 0.5s ease;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: translateY(0);
+  }
+}
+
+/*==================================================
+                HOVER EFFECTS
+===================================================*/
+
+.card:hover {
+  transform: translateY(-5px);
+
+  transition: 0.3s;
+}
+
+.chart-card:hover {
+  transform: translateY(-5px);
+
+  transition: 0.3s;
+}
+
+/*==================================================
+                RESPONSIVE
+===================================================*/
+
+@media (max-width: 992px) {
+  .hero-title {
+    font-size: 34px;
+  }
+
+  .hero-sub {
+    font-size: 16px;
+  }
+
+  .price {
+    font-size: 42px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 25px;
+  }
+
+  .card {
+    padding: 18px;
+  }
+
+  .metric-value {
+    font-size: 24px;
+  }
+
+  .price {
+    font-size: 34px;
+  }
+}
+
+/*==================================================
+                SECTION TITLES
+===================================================*/
+
+h1 {
+  color: #0f172a;
+
+  font-weight: 700;
+}
+
+h2 {
+  color: #1e293b;
+
+  font-weight: 700;
+}
+
+h3 {
+  color: #334155;
+
+  font-weight: 600;
+}
+
+h4 {
+  color: #475569;
+
+  font-weight: 600;
+}
+
+/*==================================================
+                INFO / SUCCESS
+===================================================*/
+
+.stAlert {
+  border-radius: 16px;
+
+  border: none;
+}
+
+/*==================================================
+                DIVIDER
+===================================================*/
+
+hr {
+  margin-top: 30px;
+
+  margin-bottom: 30px;
+}
+
+/*==================================================
+                TOP BANNER
+===================================================*/
+
+.banner {
+  background: linear-gradient(135deg, #2563eb, #60a5fa);
+
+  border-radius: 25px;
+
+  color: white;
+
+  padding: 35px;
+
+  box-shadow: 0px 10px 25px rgba(37, 99, 235, 0.25);
+
+  margin-bottom: 25px;
+}
+
+.banner h1 {
+  color: white;
+
+  font-size: 42px;
+}
+
+.banner p {
+  color: #e5f0ff;
+
+  font-size: 18px;
+}
+
+/*==================================================
+                GLASS EFFECT
+===================================================*/
+
+.glass {
+  background: rgba(255, 255, 255, 0.7);
+
+  backdrop-filter: blur(12px);
+
+  border: 1px solid rgba(255, 255, 255, 0.4);
+
+  border-radius: 20px;
+}
+
+/*==================================================
+                END
+===================================================*/
+/* ===== Fix Main Page Text ===== */
+/* ===== Main Page Text ===== */
+
+.stApp h1,
+.stApp h2,
+.stApp h3,
+.stApp h4,
+.stApp h5,
+.stApp h6 {
+  color: #111827 !important;
+}
+
+.stApp p,
+.stApp span {
+  color: #374151 !important;
+}
+
+/* Form Labels Only */
+
+.stNumberInput label,
+.stSelectbox label,
+.stTextInput label {
+  color: #334155 !important;
+  font-weight: 600;
+}
+/* ===========================
+   FIX STREAMLIT METRICS
+=========================== */
+
+div[data-testid="stMetric"] {
+    background: white !important;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+div[data-testid="stMetric"] * {
+    color: #111827 !important;
+}
+
+div[data-testid="stMetricLabel"] {
+    color: #475569 !important;
+}
+
+div[data-testid="stMetricValue"] {
+    color: #111827 !important;
+    font-size: 36px !important;
+    font-weight: 700 !important;
+}
+/* ===== Fix Markdown Lists ===== */
+
+.stMarkdown ul,
+.stMarkdown ol,
+.stMarkdown li {
+    color: #111827 !important;
+}
+
+.stMarkdown p {
+    color: #374151 !important;
+}
+
+.stMarkdown strong {
+    color: #111827 !important;
+}
