@@ -688,7 +688,7 @@ This project predicts house prices using **Machine Learning**.
 
 ---
 
-### 👨‍💻 Developed By
+#### 👨‍💻 Developed By
 
 **Raneesh**
 
